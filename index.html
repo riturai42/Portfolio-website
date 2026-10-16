@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ritu Kumari Rai | Portfolio</title>
 
     <style>
@@ -16,143 +17,244 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f2f6fc;
+            background: #f4f7fc;
             color: #222;
             line-height: 1.6;
         }
 
         header {
-            background: linear-gradient(135deg, #14213d, #0077b6);
+            background: #101d3a;
             color: white;
-            text-align: center;
-            padding: 35px 15px;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
         }
 
-        header h1 {
-            font-size: 34px;
+        header h2 {
+            color: #61dafb;
         }
 
         nav {
-            background: #023e8a;
-            text-align: center;
-            padding: 15px 5px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 5px 10px;
-            display: inline-block;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #ffd166;
+            color: #61dafb;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #101d3a, #244a80);
+            color: white;
+            padding: 65px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 55px;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero h3 {
+            color: #61dafb;
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .hero p {
+            margin-bottom: 22px;
+        }
+
+        .profile-container {
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #61dafb;
+            background: white;
+        }
+
+        .photo-upload {
+            display: block;
+            margin-top: 15px;
+            width: 230px;
+            font-size: 13px;
+            color: white;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #61dafb;
+            color: #101d3a;
+            padding: 11px 22px;
+            margin: 5px 5px 5px 0;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: white;
         }
 
         section {
-            max-width: 900px;
-            margin: 25px auto;
-            padding: 28px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px #00000010;
+            padding: 55px 8%;
         }
 
-        h2 {
-            color: #0077b6;
-            margin-bottom: 18px;
+        section h2 {
+            text-align: center;
+            color: #101d3a;
+            font-size: 30px;
+            margin-bottom: 25px;
         }
 
-        #about {
+        .about-text {
+            max-width: 800px;
+            margin: auto;
             text-align: center;
         }
 
-        .profile {
-            width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #0077b6;
-            display: block;
-            margin: 15px auto;
-            background: #e5eaf2;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            margin: 8px 0 15px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font: inherit;
-        }
-
-        input[type="file"] {
-            border: none;
-            padding: 8px 0;
-        }
-
-        button, .btn {
-            display: inline-block;
-            background: #0077b6;
-            color: white;
-            padding: 11px 20px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            text-decoration: none;
-            margin: 5px 5px 5px 0;
-        }
-
-        button:hover, .btn:hover {
-            background: #023e8a;
-        }
-
-        .project {
-            padding: 16px;
-            margin: 14px 0;
-            background: #f2f6fc;
-            border-left: 4px solid #0077b6;
-            border-radius: 6px;
-        }
-
-        .skills {
+        .skills, .projects {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
-            gap: 10px;
-            list-style: none;
+            gap: 18px;
         }
 
-        .skills li {
-            background: #e0f2fe;
-            color: #034078;
-            padding: 8px 14px;
-            border-radius: 20px;
+        .skill, .project-card {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000012;
+        }
+
+        .skill {
+            min-width: 130px;
+            text-align: center;
+            font-weight: bold;
+            color: #244a80;
+        }
+
+        .project-card {
+            width: 300px;
+        }
+
+        .project-card h3 {
+            color: #244a80;
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            color: #1769aa;
+            font-weight: bold;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
         }
 
         .social-links a {
-            margin-right: 12px;
+            text-decoration: none;
+            background: #101d3a;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+        }
+
+        .social-links a:hover {
+            background: #244a80;
+        }
+
+        .contact-form {
+            max-width: 550px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        .contact-form textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .contact-form button {
+            align-self: flex-start;
         }
 
         footer {
-            text-align: center;
-            background: #14213d;
+            background: #101d3a;
             color: white;
+            text-align: center;
             padding: 20px;
         }
 
         @media (max-width: 600px) {
-            header h1 {
-                font-size: 27px;
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 45px 5%;
+                gap: 30px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .profile-img {
+                width: 190px;
+                height: 190px;
             }
 
             section {
-                margin: 15px;
-                padding: 20px;
+                padding: 40px 5%;
             }
         }
     </style>
@@ -160,217 +262,275 @@
 
 <body>
 
-<header>
-    <h1>Ritu Kumari Rai</h1>
-    <p>Fresher | Full Stack Web Developer</p>
-    <p>Welcome to My Portfolio</p>
-</header>
+    <!-- Header -->
+    <header>
+        <h2>Ritu's Portfolio</h2>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-</nav>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<main>
+    <!-- Home -->
+    <main>
+        <section class="hero" id="home">
 
-    <section id="about">
-        <h2>About Me</h2>
+            <div class="hero-text">
+                <h1>Hi, I'm Ritu Kumari Rai</h1>
 
-        <img
-            id="profilePhoto"
-            class="profile"
-            src="images/profile.jpg"
-            alt="Ritu Kumari Rai Profile Photo"
-        >
+                <h3>Fresher | Full Stack Web Developer</h3>
 
-        
-<p>
-    Hello! My name is Ritu Kumari Rai. I am a B.Tech
-    graduate from Radharaman Institute of Technology
-    and Science, Bhopal. I am a fresher and an aspiring
-    Full Stack Web Developer who is passionate about
-    web development and software engineering.
-</p>
+                <p>
+                    I am a B.Tech graduate and aspiring Full Stack Web Developer.
+                    I enjoy learning new technologies and creating responsive
+                    and user-friendly websites.
+                </p>
 
-<p>
-    I have knowledge of HTML, CSS, JavaScript, React.js,
-    Node.js, Express.js, MongoDB, and MySQL. I enjoy
-    designing responsive websites and developing
-    interactive web applications that provide a good
-    user experience.
-</p>
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
 
-<p>
-    I have worked on projects such as a Doctor Appointment
-    Booking System and a Blog Application using web
-    development technologies. These projects have helped
-    me understand frontend development, backend development,
-    REST APIs, database integration, and CRUD operations.
-</p>
+            <!-- Profile Photo -->
+            <div class="profile-container">
+                <img
+                    id="profilePreview"
+                    class="profile-img"
+                    src="profile.jpg"
+                    alt="Ritu Kumari Rai profile photo"
+                >
 
-<p>
-    I am continuously improving my programming skills,
-    learning new technologies, and exploring best practices
-    in software development. I believe in learning by doing
-    and solving problems through practical projects.
-</p>
+                <label for="photoInput" class="photo-upload">
+                    Choose your profile photo:
+                </label>
 
+                <input
+                    type="file"
+                    id="photoInput"
+                    class="photo-upload"
+                    accept="image/*"
+                >
+            </div>
 
+        </section>
 
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
 
-        <h3 style="margin-top: 18px;">Upload Your Profile Photo</h3>
+            <div class="about-text">
+                <p>
+                    Hello! My name is Ritu Kumari Rai. I have completed my
+                    B.Tech and I am looking for opportunities as a Full Stack
+                    Web Developer. I have knowledge of HTML, CSS, JavaScript,
+                    React.js, Node.js, Express.js and MongoDB. I am passionate
+                    about improving my coding skills and building useful
+                    web applications.
+                </p>
+            </div>
+        </section>
 
-        <input
-            type="file"
-            id="photoInput"
-            accept="image/*"
-            aria-label="Choose profile photo"
-        >
+        <!-- Skills -->
+        <section id="skills">
+            <h2>My Skills</h2>
 
+            <div class="skills">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React.js</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Express.js</div>
+                <div class="skill">MongoDB</div>
+                <div class="skill">Git & GitHub</div>
+                <div class="skill">REST APIs</div>
+            </div>
+        </section>
 
-    </section>
+        <!-- Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul class="skills">
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>MongoDB</li>
-            <li>MySQL</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
+            <div class="projects">
 
-    <section id="projects">
-        <h2>My Projects</h2>
+                <div class="project-card">
+                    <h3>Blog Application</h3>
+                    <p>
+                        A web application for creating, publishing and
+                        managing blog posts using the MERN stack.
+                    </p>
+                    <p><strong>Tech:</strong> React, Node.js, Express, MongoDB</p>
+                    <br>
+                    <a
+                        href="https://github.com/riturai42"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
 
-        <div class="project">
-            <h3>Doctor Appointment Booking System</h3>
-            <p>
-                A web application for doctor appointment
-                booking using MERN stack technologies.
+                <div class="project-card">
+                    <h3>Doctor Appointment Booking System</h3>
+                    <p>
+                        A web application concept for viewing doctors and
+                        managing doctor appointments.
+                    </p>
+                    <p><strong>Tech:</strong> React, Node.js, Express, MongoDB</p>
+                    <br>
+                    <a
+                        href="https://github.com/riturai42"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        A personal website to showcase my skills, projects
+                        and professional links.
+                    </p>
+                    <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+                    <br>
+                    <a
+                        href="https://github.com/riturai42"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View on GitHub
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LinkedIn and GitHub -->
+        <section id="social">
+            <h2>Connect With Me</h2>
+
+            <div class="social-links">
+                <a
+                    href="https://www.linkedin.com/in/ritu-kumari-rai-2b6202372/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn Profile
+                </a>
+
+                <a
+                    href="https://github.com/riturai42"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub Profile
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form class="contact-form" id="contactForm">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    id="message"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+            </form>
+
+            <p style="text-align:center; margin-top:15px;">
+                The contact form opens your email application to send a message.
             </p>
-        </div>
+        </section>
+    </main>
 
-        <div class="project">
-            <h3>Blog Application</h3>
-            <p>
-                A web application to create and read blog posts.
-            </p>
-        </div>
-
-        <div class="project">
-            <h3>Personal Portfolio Website</h3>
-            <p>
-                A personal website showcasing my skills,
-                education and projects using HTML and CSS.
-            </p>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <h3>B.Tech</h3>
-        <p>Radharaman Institute of Technology & Science, Bhopal</p>
-        <p>2022 - 2026 | CGPA: 7.37</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <p class="social-links">
-            <a class="btn"
-               href="https://www.linkedin.com/in/ritu-kumari-rai-2b6202372/"
-               target="_blank" rel="noopener noreferrer">
-                LinkedIn Profile
-            </a>
-
-            <a class="btn"
-               href="https://github.com/ritu rai"
-               target="_blank" rel="noopener noreferrer">
-                GitHub Profile
-            </a>
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Ritu Kumari Rai.
+            All Rights Reserved.
         </p>
+    </footer>
 
-        <form id="contactForm">
-            <label for="name">Your Name</label>
-            <input type="text" id="name"
-                   placeholder="Enter your name" required>
+    <script>
+        // Show selected profile photo
+        const photoInput = document.getElementById("photoInput");
+        const profilePreview = document.getElementById("profilePreview");
 
-            <label for="email">Your Email</label>
-            <input type="email" id="email"
-                   placeholder="Enter your email" required>
+        photoInput.addEventListener("change", function () {
+            const file = this.files[0];
 
-            <label for="message">Your Message</label>
-            <textarea id="message" rows="4"
-                      placeholder="Write your message" required></textarea>
+            if (file) {
+                if (!file.type.startsWith("image/")) {
+                    alert("Please select an image file.");
+                    this.value = "";
+                    return;
+                }
 
-            <button type="submit">Send Message</button>
-        </form>
+                const imageURL = URL.createObjectURL(file);
+                profilePreview.src = imageURL;
+            }
+        });
 
-        <p id="formMessage" role="status"></p>
-    </section>
+        // Contact form opens the user's email application
+        document.getElementById("contactForm").addEventListener(
+            "submit",
+            function (event) {
+                event.preventDefault();
 
-</main>
+                const name = document.getElementById("name").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const message = document.getElementById("message").value.trim();
 
-<footer>
-    <p>&copy; 2026 Ritu Kumari Rai | All Rights Reserved</p>
-</footer>
+                // Replace this with your actual email address
+                const recipient = "your-email@example.com";
 
-<script>
-    const photoInput = document.getElementById("photoInput");
-    const profilePhoto = document.getElementById("profilePhoto");
-    const photoMessage = document.getElementById("photoMessage");
+                const subject = encodeURIComponent(
+                    "Portfolio Contact from " + name
+                );
 
-    // Show the selected image immediately in the browser
-    photoInput.addEventListener("change", function () {
-        const file = this.files[0];
+                const body = encodeURIComponent(
+                    "Name: " + name +
+                    "\nEmail: " + email +
+                    "\n\nMessage:\n" + message
+                );
 
-        if (!file) return;
+                window.location.href =
+                    "mailto:" + recipient +
+                    "?subject=" + subject +
+                    "&body=" + body;
+            }
+        );
 
-        if (!file.type.startsWith("image/")) {
-            photoMessage.textContent = "Please choose an image file.";
-            return;
-        }
-
-        const reader = new FileReader();
-
-        reader.onload = function (event) {
-            profilePhoto.src = event.target.result;
-            photoMessage.textContent =
-                "Photo selected successfully! Remember to save the image in your images folder for your website.";
-        };
-
-        reader.readAsDataURL(file);
-    });
-
-    // Demo contact form
-    document.getElementById("contactForm").addEventListener(
-        "submit",
-        function (event) {
-            event.preventDefault();
-
-            document.getElementById("formMessage").textContent =
-                "Your form is working, but a backend or email service is needed to send messages.";
-
-            this.reset();
-        }
-    );
-
-    // If the default image does not exist, hide the broken image
-    profilePhoto.addEventListener("error", function () {
-        this.style.display = "none";
-        photoMessage.textContent =
-            "Please select your photo using Choose File above.";
-    });
-</script>
+        // Automatically update the year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 </html>
