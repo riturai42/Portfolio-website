@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritu Kumari Rai | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #14213d, #0077b6);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 34px;
+        }
+
+        nav {
+            background: #023e8a;
+            text-align: center;
+            padding: 15px 5px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 28px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        h2 {
+            color: #0077b6;
+            margin-bottom: 18px;
+        }
+
+        #about {
+            text-align: center;
+        }
+
+        .profile {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0077b6;
+            display: block;
+            margin: 15px auto;
+            background: #e5eaf2;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        input[type="file"] {
+            border: none;
+            padding: 8px 0;
+        }
+
+        button, .btn {
+            display: inline-block;
+            background: #0077b6;
+            color: white;
+            padding: 11px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 5px 5px 5px 0;
+        }
+
+        button:hover, .btn:hover {
+            background: #023e8a;
+        }
+
+        .project {
+            padding: 16px;
+            margin: 14px 0;
+            background: #f2f6fc;
+            border-left: 4px solid #0077b6;
+            border-radius: 6px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #e0f2fe;
+            color: #034078;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        .social-links a {
+            margin-right: 12px;
+        }
+
+        footer {
+            text-align: center;
+            background: #14213d;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            section {
+                margin: 15px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ritu Kumari Rai</h1>
+    <p>Fresher | Full Stack Web Developer</p>
+    <p>Welcome to My Portfolio</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <img
+            id="profilePhoto"
+            class="profile"
+            src="images/profile.jpg"
+            alt="Ritu Kumari Rai Profile Photo"
+        >
+
+        
+<p>
+    Hello! My name is Ritu Kumari Rai. I am a B.Tech
+    graduate from Radharaman Institute of Technology
+    and Science, Bhopal. I am a fresher and an aspiring
+    Full Stack Web Developer who is passionate about
+    web development and software engineering.
+</p>
+
+<p>
+    I have knowledge of HTML, CSS, JavaScript, React.js,
+    Node.js, Express.js, MongoDB, and MySQL. I enjoy
+    designing responsive websites and developing
+    interactive web applications that provide a good
+    user experience.
+</p>
+
+<p>
+    I have worked on projects such as a Doctor Appointment
+    Booking System and a Blog Application using web
+    development technologies. These projects have helped
+    me understand frontend development, backend development,
+    REST APIs, database integration, and CRUD operations.
+</p>
+
+<p>
+    I am continuously improving my programming skills,
+    learning new technologies, and exploring best practices
+    in software development. I believe in learning by doing
+    and solving problems through practical projects.
+</p>
+
+
+
+
+        <h3 style="margin-top: 18px;">Upload Your Profile Photo</h3>
+
+        <input
+            type="file"
+            id="photoInput"
+            accept="image/*"
+            aria-label="Choose profile photo"
+        >
+
+
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project">
+            <h3>Doctor Appointment Booking System</h3>
+            <p>
+                A web application for doctor appointment
+                booking using MERN stack technologies.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Blog Application</h3>
+            <p>
+                A web application to create and read blog posts.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                A personal website showcasing my skills,
+                education and projects using HTML and CSS.
+            </p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <h3>B.Tech</h3>
+        <p>Radharaman Institute of Technology & Science, Bhopal</p>
+        <p>2022 - 2026 | CGPA: 7.37</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p class="social-links">
+            <a class="btn"
+               href="https://www.linkedin.com/in/ritu-kumari-rai-2b6202372/"
+               target="_blank" rel="noopener noreferrer">
+                LinkedIn Profile
+            </a>
+
+            <a class="btn"
+               href="https://github.com/ritu rai"
+               target="_blank" rel="noopener noreferrer">
+                GitHub Profile
+            </a>
+        </p>
+
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name"
+                   placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email"
+                   placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="4"
+                      placeholder="Write your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="formMessage" role="status"></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Ritu Kumari Rai | All Rights Reserved</p>
+</footer>
+
+<script>
+    const photoInput = document.getElementById("photoInput");
+    const profilePhoto = document.getElementById("profilePhoto");
+    const photoMessage = document.getElementById("photoMessage");
+
+    // Show the selected image immediately in the browser
+    photoInput.addEventListener("change", function () {
+        const file = this.files[0];
+
+        if (!file) return;
+
+        if (!file.type.startsWith("image/")) {
+            photoMessage.textContent = "Please choose an image file.";
+            return;
+        }
+
+        const reader = new FileReader();
+
+        reader.onload = function (event) {
+            profilePhoto.src = event.target.result;
+            photoMessage.textContent =
+                "Photo selected successfully! Remember to save the image in your images folder for your website.";
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+    // Demo contact form
+    document.getElementById("contactForm").addEventListener(
+        "submit",
+        function (event) {
+            event.preventDefault();
+
+            document.getElementById("formMessage").textContent =
+                "Your form is working, but a backend or email service is needed to send messages.";
+
+            this.reset();
+        }
+    );
+
+    // If the default image does not exist, hide the broken image
+    profilePhoto.addEventListener("error", function () {
+        this.style.display = "none";
+        photoMessage.textContent =
+            "Please select your photo using Choose File above.";
+    });
+</script>
+
+</body>
+</html>
